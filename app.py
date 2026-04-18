@@ -191,89 +191,160 @@ ui = {
     }
 }
 
-# ========== HARDWARE LESSONS DATA (translated titles & explanations) ==========
-hardware_list_en = [
-    "Network Interface Card (NIC)", "Wi‑Fi Adapter", "Bluetooth Module", "Cellular Modem (4G/5G)", "GPS Receiver",
-    "USB Controller / Port", "GPIO Pins", "Camera Module", "Microphone & Speaker", "LoRa / Sigfox Module",
-    "Accelerometer / Gyroscope", "Temperature & Humidity Sensor", "RFID / NFC Reader", "Relay Module",
-    "OLED / LCD Display", "Stepper Motor Driver", "Sound Sensor", "Gas / Smoke Sensor", "Joystick Module",
-    "Ethernet Shield (for Arduino)"
-]
-
-hardware_list_es = [
-    "Tarjeta de interfaz de red (NIC)", "Adaptador Wi‑Fi", "Módulo Bluetooth", "Módem celular (4G/5G)", "Receptor GPS",
-    "Controlador / Puerto USB", "Pines GPIO", "Módulo de cámara", "Micrófono y altavoz", "Módulo LoRa / Sigfox",
-    "Acelerómetro / Giroscopio", "Sensor de temperatura y humedad", "Lector RFID / NFC", "Módulo relé",
-    "Pantalla OLED / LCD", "Controlador de motor paso a paso", "Sensor de sonido", "Sensor de gas / humo",
-    "Módulo joystick", "Escudo Ethernet (para Arduino)"
-]
-
-hardware_list_fr = [
-    "Carte d'interface réseau (NIC)", "Adaptateur Wi‑Fi", "Module Bluetooth", "Modem cellulaire (4G/5G)", "Récepteur GPS",
-    "Contrôleur / port USB", "Broches GPIO", "Module caméra", "Microphone et haut‑parleur", "Module LoRa / Sigfox",
-    "Accéléromètre / Gyroscope", "Capteur de température et d'humidité", "Lecteur RFID / NFC", "Module relais",
-    "Écran OLED / LCD", "Pilote de moteur pas à pas", "Capteur sonore", "Capteur de gaz / fumée",
-    "Module joystick", "Blindage Ethernet (pour Arduino)"
-]
-
-hardware_list_zh = [
-    "网络接口卡 (NIC)", "Wi‑Fi 适配器", "蓝牙模块", "蜂窝调制解调器 (4G/5G)", "GPS 接收器",
-    "USB 控制器 / 端口", "GPIO 引脚", "摄像头模块", "麦克风和扬声器", "LoRa / Sigfox 模块",
-    "加速度计 / 陀螺仪", "温湿度传感器", "RFID / NFC 读卡器", "继电器模块",
-    "OLED / LCD 显示屏", "步进电机驱动器", "声音传感器", "气体 / 烟雾传感器", "摇杆模块",
-    "以太网扩展板 (适用于 Arduino)"
-]
-
-hardware_list_pt = [
-    "Placa de interface de rede (NIC)", "Adaptador Wi‑Fi", "Módulo Bluetooth", "Modem celular (4G/5G)", "Receptor GPS",
-    "Controlador / Porta USB", "Pinos GPIO", "Módulo de câmera", "Microfone e alto‑falante", "Módulo LoRa / Sigfox",
-    "Acelerômetro / Giroscópio", "Sensor de temperatura e umidade", "Leitor RFID / NFC", "Módulo relé",
-    "Display OLED / LCD", "Driver de motor de passo", "Sensor de som", "Sensor de gás / fumaça", "Módulo joystick",
-    "Escudo Ethernet (para Arduino)"
-]
-
+# ========== HARDWARE LISTS (translated) ==========
 hardware_lists = {
-    "en": hardware_list_en,
-    "es": hardware_list_es,
-    "fr": hardware_list_fr,
-    "zh": hardware_list_zh,
-    "pt": hardware_list_pt
+    "en": [
+        "Network Interface Card (NIC)", "Wi‑Fi Adapter", "Bluetooth Module", "Cellular Modem (4G/5G)", "GPS Receiver",
+        "USB Controller / Port", "GPIO Pins", "Camera Module", "Microphone & Speaker", "LoRa / Sigfox Module",
+        "Accelerometer / Gyroscope", "Temperature & Humidity Sensor", "RFID / NFC Reader", "Relay Module",
+        "OLED / LCD Display", "Stepper Motor Driver", "Sound Sensor", "Gas / Smoke Sensor", "Joystick Module",
+        "Ethernet Shield (for Arduino)"
+    ],
+    "es": [
+        "Tarjeta de interfaz de red (NIC)", "Adaptador Wi‑Fi", "Módulo Bluetooth", "Módem celular (4G/5G)", "Receptor GPS",
+        "Controlador / Puerto USB", "Pines GPIO", "Módulo de cámara", "Micrófono y altavoz", "Módulo LoRa / Sigfox",
+        "Acelerómetro / Giroscopio", "Sensor de temperatura y humedad", "Lector RFID / NFC", "Módulo relé",
+        "Pantalla OLED / LCD", "Controlador de motor paso a paso", "Sensor de sonido", "Sensor de gas / humo",
+        "Módulo joystick", "Escudo Ethernet (para Arduino)"
+    ],
+    "fr": [
+        "Carte d'interface réseau (NIC)", "Adaptateur Wi‑Fi", "Module Bluetooth", "Modem cellulaire (4G/5G)", "Récepteur GPS",
+        "Contrôleur / port USB", "Broches GPIO", "Module caméra", "Microphone et haut‑parleur", "Module LoRa / Sigfox",
+        "Accéléromètre / Gyroscope", "Capteur de température et d'humidité", "Lecteur RFID / NFC", "Module relais",
+        "Écran OLED / LCD", "Pilote de moteur pas à pas", "Capteur sonore", "Capteur de gaz / fumée",
+        "Module joystick", "Blindage Ethernet (pour Arduino)"
+    ],
+    "zh": [
+        "网络接口卡 (NIC)", "Wi‑Fi 适配器", "蓝牙模块", "蜂窝调制解调器 (4G/5G)", "GPS 接收器",
+        "USB 控制器 / 端口", "GPIO 引脚", "摄像头模块", "麦克风和扬声器", "LoRa / Sigfox 模块",
+        "加速度计 / 陀螺仪", "温湿度传感器", "RFID / NFC 读卡器", "继电器模块",
+        "OLED / LCD 显示屏", "步进电机驱动器", "声音传感器", "气体 / 烟雾传感器", "摇杆模块",
+        "以太网扩展板 (适用于 Arduino)"
+    ],
+    "pt": [
+        "Placa de interface de rede (NIC)", "Adaptador Wi‑Fi", "Módulo Bluetooth", "Modem celular (4G/5G)", "Receptor GPS",
+        "Controlador / Porta USB", "Pinos GPIO", "Módulo de câmera", "Microfone e alto‑falante", "Módulo LoRa / Sigfox",
+        "Acelerômetro / Giroscópio", "Sensor de temperatura e umidade", "Leitor RFID / NFC", "Módulo relé",
+        "Display OLED / LCD", "Driver de motor de passo", "Sensor de som", "Sensor de gás / fumaça", "Módulo joystick",
+        "Escudo Ethernet (para Arduino)"
+    ]
 }
 
-# Explanations (English, then placeholders for other languages – for brevity we only show English; in final code all are translated)
-explanations_en = {
-    1: "**Network Interface Card (NIC)**\nA NIC allows your computer to connect to a wired Ethernet network. Software can send and receive data packets using sockets (TCP/IP). Example: Python's `socket` library.",
-    2: "**Wi‑Fi Adapter**\nEnables wireless network communication. Software can scan networks, connect, and exchange data. Use `subprocess` to run system commands or libraries like `wifi`.",
-    3: "**Bluetooth Module**\nConnects to nearby devices (keyboards, IoT sensors). Use PyBluez or Bleak libraries in Python to discover and communicate with Bluetooth devices.",
-    4: "**Cellular Modem (4G/5G)**\nProvides internet via mobile networks. Software can use AT commands over serial to send SMS, make calls, or establish data connections.",
-    5: "**GPS Receiver**\nReceives location from satellites. Software reads NMEA sentences via serial port to get latitude, longitude, altitude. Python's `pynmea2` parses GPS data.",
-    6: "**USB Controller / Port**\nUniversal interface for peripherals. Software can detect USB devices using `pyusb` or read/write to serial USB devices (CDC ACM).",
-    7: "**GPIO Pins**\nOn Raspberry Pi or Arduino, GPIO pins read sensors and control LEDs, motors. Python's `RPi.GPIO` or `gpiozero` libraries.",
-    8: "**Camera Module**\nCaptures images/video. Use OpenCV (`cv2`) to access camera stream, process frames, and run computer vision algorithms.",
-    9: "**Microphone & Speaker**\nAudio input/output. Use `pyaudio` or `sounddevice` to record from mic and play sound. Speech recognition with `speech_recognition`.",
-    10: "**LoRa / Sigfox Module**\nLow‑power, long‑range radio for IoT. Communicate via serial AT commands. Use for agriculture, asset tracking, smart cities.",
-    11: "**Accelerometer / Gyroscope**\nMeasures acceleration and rotation. Connect via I2C (e.g., MPU6050). Python's `smbus` or `adafruit-circuitpython` libraries.",
-    12: "**Temperature & Humidity Sensor**\nDHT11/DHT22 sensors. Read via single‑wire protocol. Python's `Adafruit_DHT` library.",
-    13: "**RFID / NFC Reader**\nRead RFID tags. Connect via serial or I2C. Use `pyserial` to read UID and interact with access control systems.",
-    14: "**Relay Module**\nSwitch high‑power devices from low‑power GPIO. Control with `GPIO.output(pin, True/False)`. Used for home automation.",
-    15: "**OLED / LCD Display**\nShow text and graphics. I2C or SPI interface. Use `luma.oled` or `RPLCD` libraries.",
-    16: "**Stepper Motor Driver**\nControl precise rotation. Use GPIO pulses with `RPi.GPIO` or `AccelStepper` library.",
-    17: "**Sound Sensor**\nDetects sound intensity. Analog sensor read via ADC (MCP3008) or digital output on threshold.",
-    18: "**Gas / Smoke Sensor**\nDetect gases (MQ series). Read analog voltage to estimate concentration.",
-    19: "**Joystick Module**\nTwo analog axes and a button. Read with ADC and GPIO. Used for robotics and game controllers.",
-    20: "**Ethernet Shield**\nAdds wired Ethernet to Arduino. Use Arduino's Ethernet library for TCP/IP communication."
-}
-
-# For other languages, we would have similar dictionaries. In the final code, all are fully translated.
-# To keep this answer within length limits, I will include only English explanations but note that the final downloadable file has all 5 languages.
-# For the purpose of this response, I'll assume the file contains all translations.
-
+# ========== FULL EXPLANATIONS FOR ALL 5 LANGUAGES (20 lessons each) ==========
 explanations = {
-    "en": explanations_en,
-    # "es": explanations_es, etc. – present in final file
+    "en": {
+        1: "**Network Interface Card (NIC)**\nA NIC allows your computer to connect to a wired Ethernet network. Software can send and receive data packets using sockets (TCP/IP). Example: Python's `socket` library.",
+        2: "**Wi‑Fi Adapter**\nEnables wireless network communication. Software can scan networks, connect, and exchange data. Use `subprocess` to run system commands or libraries like `wifi`.",
+        3: "**Bluetooth Module**\nConnects to nearby devices (keyboards, IoT sensors). Use PyBluez or Bleak libraries in Python to discover and communicate with Bluetooth devices.",
+        4: "**Cellular Modem (4G/5G)**\nProvides internet via mobile networks. Software can use AT commands over serial to send SMS, make calls, or establish data connections.",
+        5: "**GPS Receiver**\nReceives location from satellites. Software reads NMEA sentences via serial port to get latitude, longitude, altitude. Python's `pynmea2` parses GPS data.",
+        6: "**USB Controller / Port**\nUniversal interface for peripherals. Software can detect USB devices using `pyusb` or read/write to serial USB devices (CDC ACM).",
+        7: "**GPIO Pins**\nOn Raspberry Pi or Arduino, GPIO pins read sensors and control LEDs, motors. Python's `RPi.GPIO` or `gpiozero` libraries.",
+        8: "**Camera Module**\nCaptures images/video. Use OpenCV (`cv2`) to access camera stream, process frames, and run computer vision algorithms.",
+        9: "**Microphone & Speaker**\nAudio input/output. Use `pyaudio` or `sounddevice` to record from mic and play sound. Speech recognition with `speech_recognition`.",
+        10: "**LoRa / Sigfox Module**\nLow‑power, long‑range radio for IoT. Communicate via serial AT commands. Use for agriculture, asset tracking, smart cities.",
+        11: "**Accelerometer / Gyroscope**\nMeasures acceleration and rotation. Connect via I2C (e.g., MPU6050). Python's `smbus` or `adafruit-circuitpython` libraries.",
+        12: "**Temperature & Humidity Sensor**\nDHT11/DHT22 sensors. Read via single‑wire protocol. Python's `Adafruit_DHT` library.",
+        13: "**RFID / NFC Reader**\nRead RFID tags. Connect via serial or I2C. Use `pyserial` to read UID and interact with access control systems.",
+        14: "**Relay Module**\nSwitch high‑power devices from low‑power GPIO. Control with `GPIO.output(pin, True/False)`. Used for home automation.",
+        15: "**OLED / LCD Display**\nShow text and graphics. I2C or SPI interface. Use `luma.oled` or `RPLCD` libraries.",
+        16: "**Stepper Motor Driver**\nControl precise rotation. Use GPIO pulses with `RPi.GPIO` or `AccelStepper` library.",
+        17: "**Sound Sensor**\nDetects sound intensity. Analog sensor read via ADC (MCP3008) or digital output on threshold.",
+        18: "**Gas / Smoke Sensor**\nDetect gases (MQ series). Read analog voltage to estimate concentration.",
+        19: "**Joystick Module**\nTwo analog axes and a button. Read with ADC and GPIO. Used for robotics and game controllers.",
+        20: "**Ethernet Shield**\nAdds wired Ethernet to Arduino. Use Arduino's Ethernet library for TCP/IP communication."
+    },
+    "es": {
+        1: "**Tarjeta de interfaz de red (NIC)**\nUna NIC permite que su computadora se conecte a una red Ethernet cableada. El software puede enviar y recibir paquetes de datos mediante sockets (TCP/IP). Ejemplo: la biblioteca `socket` de Python.",
+        2: "**Adaptador Wi‑Fi**\nPermite la comunicación inalámbrica. El software puede escanear redes, conectarse e intercambiar datos. Use `subprocess` para ejecutar comandos del sistema o bibliotecas como `wifi`.",
+        3: "**Módulo Bluetooth**\nSe conecta a dispositivos cercanos (teclados, sensores IoT). Use PyBluez o Bleak en Python para descubrir y comunicarse con dispositivos Bluetooth.",
+        4: "**Módem celular (4G/5G)**\nProporciona Internet a través de redes móviles. El software puede usar comandos AT por serial para enviar SMS, hacer llamadas o establecer conexiones de datos.",
+        5: "**Receptor GPS**\nRecibe ubicación de satélites. El software lee oraciones NMEA por puerto serie para obtener latitud, longitud, altitud. `pynmea2` de Python analiza datos GPS.",
+        6: "**Controlador / Puerto USB**\nInterfaz universal para periféricos. El software puede detectar dispositivos USB con `pyusb` o leer/escribir en dispositivos USB serie (CDC ACM).",
+        7: "**Pines GPIO**\nEn Raspberry Pi o Arduino, los pines GPIO leen sensores y controlan LEDs, motores. Bibliotecas `RPi.GPIO` o `gpiozero` de Python.",
+        8: "**Módulo de cámara**\nCaptura imágenes/video. Use OpenCV (`cv2`) para acceder al flujo de la cámara, procesar cuadros y ejecutar algoritmos de visión artificial.",
+        9: "**Micrófono y altavoz**\nEntrada/salida de audio. Use `pyaudio` o `sounddevice` para grabar desde el micrófono y reproducir sonido. Reconocimiento de voz con `speech_recognition`.",
+        10: "**Módulo LoRa / Sigfox**\nRadio de baja potencia y largo alcance para IoT. Comuníquese mediante comandos AT por serie. Úselo para agricultura, seguimiento de activos, ciudades inteligentes.",
+        11: "**Acelerómetro / Giroscopio**\nMide aceleración y rotación. Conéctese vía I2C (ej. MPU6050). Bibliotecas `smbus` o `adafruit-circuitpython` de Python.",
+        12: "**Sensor de temperatura y humedad**\nSensores DHT11/DHT22. Lea mediante protocolo de un solo cable. Biblioteca `Adafruit_DHT` de Python.",
+        13: "**Lector RFID / NFC**\nLee etiquetas RFID. Conéctese por serie o I2C. Use `pyserial` para leer el UID e interactuar con sistemas de control de acceso.",
+        14: "**Módulo relé**\nConmuta dispositivos de alta potencia desde GPIO de baja potencia. Controle con `GPIO.output(pin, True/False)`. Se usa en domótica.",
+        15: "**Pantalla OLED / LCD**\nMuestra texto y gráficos. Interfaz I2C o SPI. Use las bibliotecas `luma.oled` o `RPLCD`.",
+        16: "**Controlador de motor paso a paso**\nControla rotación precisa. Use pulsos GPIO con `RPi.GPIO` o la biblioteca `AccelStepper`.",
+        17: "**Sensor de sonido**\nDetecta intensidad de sonido. Sensor analógico leído mediante ADC (MCP3008) o salida digital por umbral.",
+        18: "**Sensor de gas / humo**\nDetecta gases (serie MQ). Lea voltaje analógico para estimar concentración.",
+        19: "**Módulo joystick**\nDos ejes analógicos y un botón. Lea con ADC y GPIO. Usado en robótica y controladores de juegos.",
+        20: "**Escudo Ethernet**\nAgrega Ethernet cableada a Arduino. Use la biblioteca Ethernet de Arduino para comunicación TCP/IP."
+    },
+    "fr": {
+        1: "**Carte d'interface réseau (NIC)**\nUne NIC permet à votre ordinateur de se connecter à un réseau Ethernet filaire. Le logiciel peut envoyer et recevoir des paquets de données via des sockets (TCP/IP). Exemple : la bibliothèque `socket` de Python.",
+        2: "**Adaptateur Wi‑Fi**\nPermet la communication réseau sans fil. Le logiciel peut scanner les réseaux, se connecter et échanger des données. Utilisez `subprocess` pour exécuter des commandes système ou des bibliothèques comme `wifi`.",
+        3: "**Module Bluetooth**\nSe connecte aux appareils proches (claviers, capteurs IoT). Utilisez PyBluez ou Bleak en Python pour découvrir et communiquer avec des appareils Bluetooth.",
+        4: "**Modem cellulaire (4G/5G)**\nFournit Internet via les réseaux mobiles. Le logiciel peut utiliser des commandes AT en série pour envoyer des SMS, passer des appels ou établir des connexions de données.",
+        5: "**Récepteur GPS**\nReçoit la position des satellites. Le logiciel lit les phrases NMEA via le port série pour obtenir la latitude, longitude, altitude. `pynmea2` de Python analyse les données GPS.",
+        6: "**Contrôleur / port USB**\nInterface universelle pour périphériques. Le logiciel peut détecter des périphériques USB avec `pyusb` ou lire/écrire sur des périphériques USB série (CDC ACM).",
+        7: "**Broches GPIO**\nSur Raspberry Pi ou Arduino, les broches GPIO lisent les capteurs et contrôlent les LEDs, moteurs. Bibliothèques `RPi.GPIO` ou `gpiozero` de Python.",
+        8: "**Module caméra**\nCapture des images/vidéos. Utilisez OpenCV (`cv2`) pour accéder au flux de la caméra, traiter les images et exécuter des algorithmes de vision par ordinateur.",
+        9: "**Microphone et haut‑parleur**\nEntrée/sortie audio. Utilisez `pyaudio` ou `sounddevice` pour enregistrer depuis le micro et lire du son. Reconnaissance vocale avec `speech_recognition`.",
+        10: "**Module LoRa / Sigfox**\nRadio basse consommation et longue portée pour l'IoT. Communiquez via des commandes AT en série. Utilisez‑le pour l'agriculture, le suivi d'actifs, les villes intelligentes.",
+        11: "**Accéléromètre / Gyroscope**\nMesure l'accélération et la rotation. Connectez‑vous via I2C (ex. MPU6050). Bibliothèques `smbus` ou `adafruit-circuitpython` de Python.",
+        12: "**Capteur de température et d'humidité**\nCapteurs DHT11/DHT22. Lisez via le protocole à un fil. Bibliothèque `Adafruit_DHT` de Python.",
+        13: "**Lecteur RFID / NFC**\nLit les étiquettes RFID. Connectez‑vous par série ou I2C. Utilisez `pyserial` pour lire l'UID et interagir avec les systèmes de contrôle d'accès.",
+        14: "**Module relais**\nCommute des appareils haute puissance depuis des GPIO basse puissance. Contrôlez avec `GPIO.output(pin, True/False)`. Utilisé pour la domotique.",
+        15: "**Écran OLED / LCD**\nAffiche du texte et des graphiques. Interface I2C ou SPI. Utilisez les bibliothèques `luma.oled` ou `RPLCD`.",
+        16: "**Pilote de moteur pas à pas**\nContrôle une rotation précise. Utilisez des impulsions GPIO avec `RPi.GPIO` ou la bibliothèque `AccelStepper`.",
+        17: "**Capteur sonore**\nDétecte l'intensité sonore. Capteur analogique lu via ADC (MCP3008) ou sortie numérique sur seuil.",
+        18: "**Capteur de gaz / fumée**\nDétecte les gaz (série MQ). Lisez la tension analogique pour estimer la concentration.",
+        19: "**Module joystick**\nDeux axes analogiques et un bouton. Lisez avec ADC et GPIO. Utilisé en robotique et pour les manettes de jeux.",
+        20: "**Blindage Ethernet**\nAjoute Ethernet filaire à Arduino. Utilisez la bibliothèque Ethernet d'Arduino pour la communication TCP/IP."
+    },
+    "zh": {
+        1: "**网络接口卡 (NIC)**\nNIC 允许您的计算机连接到有线以太网。软件可以使用套接字 (TCP/IP) 发送和接收数据包。示例：Python 的 `socket` 库。",
+        2: "**Wi‑Fi 适配器**\n实现无线网络通信。软件可以扫描网络、连接并交换数据。使用 `subprocess` 运行系统命令或使用 `wifi` 等库。",
+        3: "**蓝牙模块**\n连接到附近的设备（键盘、物联网传感器）。使用 Python 的 PyBluez 或 Bleak 库发现蓝牙设备并进行通信。",
+        4: "**蜂窝调制解调器 (4G/5G)**\n通过移动网络提供互联网。软件可以通过串口使用 AT 命令发送短信、拨打电话或建立数据连接。",
+        5: "**GPS 接收器**\n从卫星接收位置。软件通过串口读取 NMEA 语句以获取纬度、经度、海拔。Python 的 `pynmea2` 解析 GPS 数据。",
+        6: "**USB 控制器 / 端口**\n通用外设接口。软件可以使用 `pyusb` 检测 USB 设备，或对串行 USB 设备 (CDC ACM) 进行读写。",
+        7: "**GPIO 引脚**\n在 Raspberry Pi 或 Arduino 上，GPIO 引脚读取传感器并控制 LED、电机。使用 Python 的 `RPi.GPIO` 或 `gpiozero` 库。",
+        8: "**摄像头模块**\n捕获图像/视频。使用 OpenCV (`cv2`) 访问摄像头流、处理帧并运行计算机视觉算法。",
+        9: "**麦克风和扬声器**\n音频输入/输出。使用 `pyaudio` 或 `sounddevice` 从麦克风录音和播放声音。使用 `speech_recognition` 进行语音识别。",
+        10: "**LoRa / Sigfox 模块**\n用于物联网的低功耗长距离无线电。通过串口 AT 命令进行通信。用于农业、资产跟踪、智慧城市。",
+        11: "**加速度计 / 陀螺仪**\n测量加速度和旋转。通过 I2C 连接（例如 MPU6050）。使用 Python 的 `smbus` 或 `adafruit-circuitpython` 库。",
+        12: "**温湿度传感器**\nDHT11/DHT22 传感器。通过单线协议读取。使用 Python 的 `Adafruit_DHT` 库。",
+        13: "**RFID / NFC 读卡器**\n读取 RFID 标签。通过串口或 I2C 连接。使用 `pyserial` 读取 UID 并与门禁系统交互。",
+        14: "**继电器模块**\n通过低功耗 GPIO 切换高功率设备。使用 `GPIO.output(pin, True/False)` 控制。用于家庭自动化。",
+        15: "**OLED / LCD 显示屏**\n显示文本和图形。I2C 或 SPI 接口。使用 `luma.oled` 或 `RPLCD` 库。",
+        16: "**步进电机驱动器**\n控制精确旋转。使用 GPIO 脉冲配合 `RPi.GPIO` 或 `AccelStepper` 库。",
+        17: "**声音传感器**\n检测声音强度。通过 ADC (MCP3008) 读取模拟传感器，或通过阈值数字输出。",
+        18: "**气体 / 烟雾传感器**\n检测气体（MQ 系列）。读取模拟电压以估算浓度。",
+        19: "**摇杆模块**\n两个模拟轴和一个按钮。使用 ADC 和 GPIO 读取。用于机器人和游戏控制器。",
+        20: "**以太网扩展板**\n为 Arduino 添加有线以太网。使用 Arduino 的 Ethernet 库进行 TCP/IP 通信。"
+    },
+    "pt": {
+        1: "**Placa de interface de rede (NIC)**\nUma NIC permite que seu computador se conecte a uma rede Ethernet com fio. O software pode enviar e receber pacotes de dados usando soquetes (TCP/IP). Exemplo: biblioteca `socket` do Python.",
+        2: "**Adaptador Wi‑Fi**\nPermite comunicação sem fio. O software pode escanear redes, conectar e trocar dados. Use `subprocess` para executar comandos do sistema ou bibliotecas como `wifi`.",
+        3: "**Módulo Bluetooth**\nConecta-se a dispositivos próximos (teclados, sensores IoT). Use as bibliotecas PyBluez ou Bleak em Python para descobrir e se comunicar com dispositivos Bluetooth.",
+        4: "**Modem celular (4G/5G)**\nFornece internet via redes móveis. O software pode usar comandos AT via serial para enviar SMS, fazer chamadas ou estabelecer conexões de dados.",
+        5: "**Receptor GPS**\nRecebe localização de satélites. O software lê frases NMEA pela porta serial para obter latitude, longitude, altitude. O `pynmea2` do Python analisa dados GPS.",
+        6: "**Controlador / Porta USB**\nInterface universal para periféricos. O software pode detectar dispositivos USB com `pyusb` ou ler/escrever em dispositivos USB seriais (CDC ACM).",
+        7: "**Pinos GPIO**\nNo Raspberry Pi ou Arduino, os pinos GPIO leem sensores e controlam LEDs, motores. Bibliotecas `RPi.GPIO` ou `gpiozero` do Python.",
+        8: "**Módulo de câmera**\nCaptura imagens/vídeo. Use OpenCV (`cv2`) para acessar o fluxo da câmera, processar quadros e executar algoritmos de visão computacional.",
+        9: "**Microfone e alto‑falante**\nEntrada/saída de áudio. Use `pyaudio` ou `sounddevice` para gravar do microfone e reproduzir som. Reconhecimento de fala com `speech_recognition`.",
+        10: "**Módulo LoRa / Sigfox**\nRádio de baixa potência e longo alcance para IoT. Comunique-se via comandos AT seriais. Use para agricultura, rastreamento de ativos, cidades inteligentes.",
+        11: "**Acelerômetro / Giroscópio**\nMede aceleração e rotação. Conecte via I2C (ex. MPU6050). Bibliotecas `smbus` ou `adafruit-circuitpython` do Python.",
+        12: "**Sensor de temperatura e umidade**\nSensores DHT11/DHT22. Leia via protocolo de um fio. Biblioteca `Adafruit_DHT` do Python.",
+        13: "**Leitor RFID / NFC**\nLê etiquetas RFID. Conecte via serial ou I2C. Use `pyserial` para ler o UID e interagir com sistemas de controle de acesso.",
+        14: "**Módulo relé**\nComuta dispositivos de alta potência a partir de GPIO de baixa potência. Controle com `GPIO.output(pin, True/False)`. Usado em automação residencial.",
+        15: "**Display OLED / LCD**\nExibe texto e gráficos. Interface I2C ou SPI. Use as bibliotecas `luma.oled` ou `RPLCD`.",
+        16: "**Driver de motor de passo**\nControla rotação precisa. Use pulsos GPIO com `RPi.GPIO` ou a biblioteca `AccelStepper`.",
+        17: "**Sensor de som**\nDetecta intensidade sonora. Sensor analógico lido via ADC (MCP3008) ou saída digital por limiar.",
+        18: "**Sensor de gás / fumaça**\nDetecta gases (série MQ). Leia a tensão analógica para estimar a concentração.",
+        19: "**Módulo joystick**\nDois eixos analógicos e um botão. Leia com ADC e GPIO. Usado em robótica e controles de jogos.",
+        20: "**Escudo Ethernet**\nAdiciona Ethernet com fio ao Arduino. Use a biblioteca Ethernet do Arduino para comunicação TCP/IP."
+    }
 }
 
-# Demo codes (same for all languages)
+# ========== DEMO CODES (same for all languages) ==========
 demo_codes = {
     1: "import socket\ns = socket.socket()\ns.connect(('google.com', 80))\ns.send(b'GET / HTTP/1.1\\r\\n\\r\\n')\nprint(s.recv(1024))",
     2: "import subprocess\nsubprocess.run(['nmcli', 'dev', 'wifi', 'list'])",
@@ -297,27 +368,23 @@ demo_codes = {
     20: "// Arduino code\n#include <SPI.h>\n#include <Ethernet.h>\nbyte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};\nEthernetServer server(80);\nvoid setup() { Ethernet.begin(mac); server.begin(); }\nvoid loop() { EthernetClient client = server.available(); if (client) { client.println(\"HTTP/1.1 200 OK\"); client.println(); client.println(\"Hello from Arduino\"); delay(1); } }"
 }
 
-# Image URLs (same placeholders for all languages)
+# ========== IMAGE URLS (replace with real hardware images) ==========
 image_urls = {i: f"https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=400&h=300&fit=crop" for i in range(1, 21)}
-# (Replace with actual hardware images)
 
-# Practice exercises (translated descriptions)
+# ========== PRACTICE EXERCISES (translated) ==========
 def get_practice(lang, lesson_num):
-    base_desc_en = f"Practice exercise for {hardware_list_en[lesson_num-1]}: Write a Python script that reads data or controls the hardware."
-    # For other languages, we would have translations. In final file, all are present.
-    # Here we return a generic for all languages to avoid KeyError.
-    desc = base_desc_en
-    if lang == "es":
-        desc = f"Ejercicio práctico para {hardware_list_es[lesson_num-1]}: Escriba un script Python que lea datos o controle el hardware."
-    elif lang == "fr":
-        desc = f"Exercice pratique pour {hardware_list_fr[lesson_num-1]}: Écrivez un script Python qui lit des données ou contrôle le matériel."
-    elif lang == "zh":
-        desc = f"{hardware_list_zh[lesson_num-1]}的练习：编写一个Python脚本来读取数据或控制硬件。"
-    elif lang == "pt":
-        desc = f"Exercício prático para {hardware_list_pt[lesson_num-1]}: Escreva um script Python que leia dados ou controle o hardware."
+    hw = hardware_lists[lang][lesson_num-1]
+    base_texts = {
+        "en": f"Write a Python script that reads data from or controls the {hw}. Use the demo code as a starting point. Modify it to add new features (e.g., logging, alerts, or a simple GUI).",
+        "es": f"Escriba un script de Python que lea datos o controle el {hw}. Use el código de demostración como punto de partida. Modifíquelo para agregar nuevas funciones (por ejemplo, registro, alertas o una interfaz gráfica simple).",
+        "fr": f"Écrivez un script Python qui lit des données ou contrôle le {hw}. Utilisez le code de démonstration comme point de départ. Modifiez‑le pour ajouter de nouvelles fonctionnalités (ex. journalisation, alertes, interface graphique simple).",
+        "zh": f"编写一个 Python 脚本，从 {hw} 读取数据或控制它。以演示代码为起点。修改它以添加新功能（例如日志记录、警报或简单的图形界面）。",
+        "pt": f"Escreva um script Python que leia dados ou controle o {hw}. Use o código de demonstração como ponto de partida. Modifique‑o para adicionar novos recursos (ex. registro, alertas ou uma interface gráfica simples)."
+    }
+    desc = base_texts.get(lang, base_texts["en"])
     exercises = []
     for i in range(1, 6):
-        exercises.append({"desc": f"{desc} (Exercise {i})", "solution": "# Your code here\n# Hint: Use the demo code as reference."})
+        exercises.append({"desc": f"{desc} (Exercise {i})", "solution": "# Your solution here\n# Hint: Extend the demo code with your own logic.\npass"})
     return exercises
 
 # ========== SIDEBAR ==========
@@ -367,7 +434,7 @@ def play_audio(text, key):
 
 # ========== DISPLAY LESSON ==========
 hw_name = hardware_lists[lang][lesson_number-1]
-exp_text = explanations[lang][lesson_number]  # Ensure this exists in final file
+exp_text = explanations[lang][lesson_number]
 demo = demo_codes[lesson_number]
 exercises = get_practice(lang, lesson_number)
 
